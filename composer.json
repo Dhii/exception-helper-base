@@ -19,10 +19,12 @@
         "ptrofimov/xpmock": "^1.1",
         "dhii/php-cs-fixer-config": "^0.1",
         "codeclimate/php-test-reporter": "<=0.3.2",
-        "dhii/exception": "dev-task/initial-classes"
+        "dhii/exception": "dev-task/initial-classes",
+        "dhii/stringable-interface": "^0.1"
     },
     "suggest": {
-        "dhii/exception": "To be able to use traits which create basic exceptions"
+        "dhii/exception": "To be able to use traits which create basic exceptions",
+        "dhii/stringable-interface": "To be able to pass stringables instead of strings in some cases"
     },
     "autoload": {
         "psr-4": {

@@ -4,9 +4,10 @@ namespace Dhii\Exception\FuncTest;
 
 use Xpmock\TestCase;
 use Exception as RootException;
+use Dhii\Exception\CreateInvalidArgumentExceptionCapableTrait as TestSubject;
 
 /**
- * Tests {@see \Dhii\Exception\CreateInvalidArgumentExceptionCapableTrait}.
+ * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
@@ -17,14 +18,14 @@ class CreateInvalidArgumentExceptionCapableTraitTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Exception\\CreateInvalidArgumentExceptionCapableTrait';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\CreateInvalidArgumentExceptionCapableTrait';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return \Dhii\Exception\CreateInvalidArgumentExceptionCapableTrait
+     * @return object
      */
     public function createInstance()
     {
@@ -75,7 +76,7 @@ class CreateInvalidArgumentExceptionCapableTraitTest extends TestCase
         $result = $_subject->_createInvalidArgumentException($message, $code, $previous, $argument);
 
         $this->assertInstanceOf('InvalidArgumentException', $result, 'Subject could not create a valid result ');
-        $this->assertInstanceOf('Dhii\\Exception\\InvalidArgumentExceptionInterface', $result, 'Subject could not create a valid result ');
+        $this->assertInstanceOf('Dhii\Exception\InvalidArgumentExceptionInterface', $result, 'Subject could not create a valid result ');
         $this->assertEquals($message, $result->getMessage(), 'Subject result has wrong message');
         $this->assertEquals($code, $result->getCode(), 'Subject result has wrong code');
         $this->assertEquals($argument, $result->getArgument(), 'Subject result has wrong argument');

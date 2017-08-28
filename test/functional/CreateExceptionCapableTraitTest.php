@@ -4,9 +4,10 @@ namespace Dhii\Exception\FuncTest;
 
 use Xpmock\TestCase;
 use Exception as RootException;
+use Dhii\Exception\CreateExceptionCapableTrait as TestSubject;
 
 /**
- * Tests {@see \Dhii\Exception\CreateExceptionCapableTrait}.
+ * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
@@ -17,14 +18,14 @@ class CreateExceptionCapableTraitTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Exception\\CreateExceptionCapableTrait';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Exception\CreateExceptionCapableTrait';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return \Dhii\Exception\CreateExceptionCapableTrait
+     * @return object
      */
     public function createInstance()
     {
@@ -74,7 +75,7 @@ class CreateExceptionCapableTraitTest extends TestCase
         $result = $_subject->_createException($message, $code, $previous);
 
         $this->assertInstanceOf('Exception', $result, 'Subject could not create a valid result ');
-        $this->assertInstanceOf('Dhii\\Exception\\ThrowableInterface', $result, 'Subject could not create a valid result ');
+        $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $result, 'Subject could not create a valid result ');
         $this->assertEquals($message, $result->getMessage(), 'Subject result has wrong message');
         $this->assertEquals($code, $result->getCode(), 'Subject result has wrong code');
         $this->assertSame($previous, $result->getPrevious(), 'Subject result has wrong inner exception');

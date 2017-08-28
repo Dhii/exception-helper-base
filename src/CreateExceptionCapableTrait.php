@@ -3,6 +3,7 @@
 namespace Dhii\Exception;
 
 use Exception as RootException;
+use Dhii\Util\String\StringableInterface as Stringable;
 
 /**
  * Functionality for creating the most basic Dhii exceptions.
@@ -16,13 +17,13 @@ trait CreateExceptionCapableTrait
      *
      * @since [*next-version*]
      *
-     * @param string        $message  The error message.
-     * @param int           $code     The error code.
-     * @param RootException $previous The inner exception for chaining, if any.
+     * @param string|Stringable|null $message  The error message, if any.
+     * @param int|null               $code     The error code, if any.
+     * @param RootException|null     $previous The inner exception for chaining, if any.
      *
      * @return ThrowableInterface The new exception.
      */
-    protected function _createException($message = '', $code = 0, $previous = null)
+    protected function _createException($message = null, $code = null, $previous = null)
     {
         return new Exception($message, $code, $previous);
     }

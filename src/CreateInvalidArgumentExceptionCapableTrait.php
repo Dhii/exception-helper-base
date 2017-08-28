@@ -3,6 +3,7 @@
 namespace Dhii\Exception;
 
 use Exception as RootException;
+use Dhii\Util\String\StringableInterface as Stringable;
 
 /**
  * Functionality for creating Dhii invalid argument exceptions.
@@ -16,16 +17,16 @@ trait CreateInvalidArgumentExceptionCapableTrait
      *
      * @since [*next-version*]
      *
-     * @param string        $message  The error message.
-     * @param int           $code     The error code.
-     * @param RootException $previous The inner exception for chaining, if any.
-     * @param mixed         $argument The invalid argument, if any.
+     * @param string|Stringable|null $message  The error message, if any.
+     * @param int|null               $code     The error code, if any.
+     * @param RootException|null     $previous The inner exception for chaining, if any.
+     * @param mixed|null             $argument The invalid argument, if any.
      *
      * @return InvalidArgumentExceptionInterface The new exception.
      */
     protected function _createInvalidArgumentException(
-            $message = '',
-            $code = 0,
+            $message = null,
+            $code = null,
             RootException $previous = null,
             $argument = null
     ) {

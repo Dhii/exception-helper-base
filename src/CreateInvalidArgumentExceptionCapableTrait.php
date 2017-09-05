@@ -4,6 +4,7 @@ namespace Dhii\Exception;
 
 use Exception as RootException;
 use Dhii\Util\String\StringableInterface as Stringable;
+use InvalidArgumentException as BaseInvalidArgumentException;
 
 /**
  * Functionality for creating Dhii invalid argument exceptions.
@@ -22,7 +23,7 @@ trait CreateInvalidArgumentExceptionCapableTrait
      * @param RootException|null     $previous The inner exception for chaining, if any.
      * @param mixed|null             $argument The invalid argument, if any.
      *
-     * @return InvalidArgumentExceptionInterface The new exception.
+     * @return BaseInvalidArgumentException The new exception.
      */
     protected function _createInvalidArgumentException(
             $message = null,

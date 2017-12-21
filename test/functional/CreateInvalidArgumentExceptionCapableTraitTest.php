@@ -79,7 +79,7 @@ class CreateInvalidArgumentExceptionCapableTraitTest extends TestCase
         $this->assertInstanceOf('Dhii\Exception\InvalidArgumentExceptionInterface', $result, 'Subject could not create a valid result ');
         $this->assertEquals($message, $result->getMessage(), 'Subject result has wrong message');
         $this->assertEquals($code, $result->getCode(), 'Subject result has wrong code');
-        $this->assertEquals($argument, $result->getArgument(), 'Subject result has wrong argument');
+        $this->assertEquals($argument, $result->getSubject(), 'Subject result has wrong argument');
         $this->assertSame($previous, $result->getPrevious(), 'Subject result has wrong inner exception');
     }
 }

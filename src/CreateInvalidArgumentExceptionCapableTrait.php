@@ -4,7 +4,6 @@ namespace Dhii\Exception;
 
 use Exception as RootException;
 use Dhii\Util\String\StringableInterface as Stringable;
-use InvalidArgumentException as BaseInvalidArgumentException;
 
 /**
  * Functionality for creating Dhii invalid argument exceptions.

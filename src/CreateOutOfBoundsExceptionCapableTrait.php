@@ -6,30 +6,30 @@ use Exception as RootException;
 use Dhii\Util\String\StringableInterface as Stringable;
 
 /**
- * Functionality for creating Dhii Out of Range exceptions.
+ * Functionality for creating Dhii Out of Bounds exceptions.
  *
  * @since [*next-version*]
  */
-trait CreateOutOfRangeExceptionCapableTrait
+trait CreateOutOfBoundsExceptionCapableTrait
 {
     /**
-     * Creates a new Dhii Out Of Range exception.
+     * Creates a new Dhii Out Of Bounds exception.
      *
      * @since [*next-version*]
      *
      * @param string|Stringable|null $message  The error message, if any.
      * @param int|null               $code     The error code, if any.
      * @param RootException|null     $previous The inner exception for chaining, if any.
-     * @param mixed|null             $argument The value that is out of range, if any.
+     * @param mixed|null             $argument The value that is out of bounds, if any.
      *
-     * @return OutOfRangeException The new exception.
+     * @return OutOfBoundsException The new exception.
      */
-    protected function _createOutOfRangeException(
+    protected function _createOutOfBoundsException(
             $message = null,
             $code = null,
             RootException $previous = null,
             $argument = null
     ) {
-        return new OutOfRangeException($message, $code, $previous, $argument);
+        return new OutOfBoundsException($message, $code, $previous, $argument);
     }
 }

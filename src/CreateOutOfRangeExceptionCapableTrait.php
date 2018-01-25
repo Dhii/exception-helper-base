@@ -6,7 +6,7 @@ use Exception as RootException;
 use Dhii\Util\String\StringableInterface as Stringable;
 
 /**
- * Functionality for creating Dhii invalid argument exceptions.
+ * Functionality for creating Dhii Out of Range exceptions.
  *
  * @since [*next-version*]
  */

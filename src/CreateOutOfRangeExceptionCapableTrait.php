@@ -20,7 +20,7 @@ trait CreateOutOfRangeExceptionCapableTrait
      * @param string|Stringable|null $message  The error message, if any.
      * @param int|null               $code     The error code, if any.
      * @param RootException|null     $previous The inner exception for chaining, if any.
-     * @param mixed|null             $argument The invalid argument, if any.
+     * @param mixed|null             $argument The value that is out of range, if any.
      *
      * @return OutOfRangeException The new exception.
      */

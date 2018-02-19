@@ -6,14 +6,14 @@ use Exception as RootException;
 use Dhii\Util\String\StringableInterface as Stringable;
 
 /**
- * Functionality for creating the most basic Dhii exceptions.
+ * Functionality for creating Runtime exceptions.
  *
  * @since [*next-version*]
  */
-trait CreateExceptionCapableTrait
+trait CreateRuntimeExceptionCapableTrait
 {
     /**
-     * Creates a new basic Dhii exception.
+     * Creates a new Runtime exception.
      *
      * @since [*next-version*]
      *
@@ -21,10 +21,10 @@ trait CreateExceptionCapableTrait
      * @param int|float|string|Stringable|null      $code     The numeric error code, if any.
      * @param RootException|null                    $previous The inner exception, if any.
      *
-     * @return ThrowableInterface The new exception.
+     * @return RuntimeException The new exception.
      */
-    protected function _createException($message = null, $code = null, $previous = null)
+    protected function _createRuntimeException($message = null, $code = null, $previous = null)
     {
-        return new Exception($message, $code, $previous);
+        return new RuntimeException($message, $code, $previous);
     }
 }

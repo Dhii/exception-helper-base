@@ -72,7 +72,7 @@ class CreateInternalExceptionCapableTraitTest extends TestCase
         $code = rand(1, 100);
         $previous = $this->createException(uniqid('message-'), rand(1, 100));
 
-        $result = $_subject->_createRuntimeException($message, $code, $previous);
+        $result = $_subject->_createInternalException($message, $code, $previous);
 
         $this->assertInstanceOf('Exception', $result, 'Subject could not create a valid result ');
         $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $result, 'Subject could not create a valid result ');

@@ -13,9 +13,10 @@ Base functionality for exception helpers.
 - [`CreateInvalidArgumentExceptionCapableTrait`][CreateInvalidArgumentExceptionCapableTrait] - Creates a Dhii Invalid Argument exception.
 - [`CreateOutOfBoundsExceptionCapableTrait`][CreateOutOfBoundsExceptionCapableTrait] - Creates a Dhii Out Of Bounds exception.
 - [`CreateOutOfRangeExceptionCapableTrait`][CreateOutOfRangeExceptionCapableTrait] - Creates a Dhii Out Of Range exception.
-- [`CreateRuntimeExceptionCapableTrait`][CreateRuntimeExceptionCapableTrait] Creates a Dhii Runtime exception.
+- [`CreateRuntimeExceptionCapableTrait`][CreateRuntimeExceptionCapableTrait] - Creates a Dhii Runtime exception.
+- [`CreateInternalExceptionCapableTrait`][CreateInternalExceptionCapableTrait] - Creates a Dhii Internal exception.
 
-For more information about the exceptions please see [`dhii/exception`][dhii/exception];
+For more information about the exceptions please see [`dhii/exception`][dhii/exception].
 
 [Dhii]: https://github.com/Dhii/dhii
 
@@ -26,3 +27,4 @@ For more information about the exceptions please see [`dhii/exception`][dhii/exc
 [CreateOutOfBoundsExceptionCapableTrait]:               src/CreateOutOfBoundsExceptionCapableTrait.php
 [CreateOutOfRangeExceptionCapableTrait]:                src/CreateOutOfRangeExceptionCapableTrait.php
 [CreateRuntimeExceptionCapableTrait]:                   src/CreateRuntimeExceptionCapableTrait.php
+[CreateInternalExceptionCapableTrait]:                  src/CreateInternalExceptionCapableTrait.php

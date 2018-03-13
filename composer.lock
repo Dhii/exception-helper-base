@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "14adc0fbaa3f660896e30d328a7e7eff",
+    "content-hash": "acee0234ef69413d4696a34a9a40e296",
     "packages": [
         {
             "name": "dhii/exception",
-            "version": "v0.1-alpha1",
+            "version": "v0.1-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/exception.git",
-                "reference": "d228ddf648d2be0691aab9f956db7a4c1168ea28"
+                "reference": "51ff34ea474725a758ac43c97788c3ed95eb7be9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/exception/zipball/d228ddf648d2be0691aab9f956db7a4c1168ea28",
-                "reference": "d228ddf648d2be0691aab9f956db7a4c1168ea28",
+                "url": "https://api.github.com/repos/Dhii/exception/zipball/51ff34ea474725a758ac43c97788c3ed95eb7be9",
+                "reference": "51ff34ea474725a758ac43c97788c3ed95eb7be9",
                 "shasum": ""
             },
             "require": {
@@ -29,6 +29,7 @@
             "require-dev": {
                 "codeclimate/php-test-reporter": "<=0.3.2",
                 "dhii/php-cs-fixer-config": "^0.1",
+                "dhii/stringable-interface": "^0.1",
                 "phpunit/phpunit": "^4.8",
                 "ptrofimov/xpmock": "^1.1"
             },
@@ -54,7 +55,7 @@
                 }
             ],
             "description": "Standards-compliant exception classes",
-            "time": "2018-03-07T09:45:52+00:00"
+            "time": "2018-03-13T09:32:23+00:00"
         },
         {
             "name": "dhii/exception-interface",
@@ -106,20 +107,20 @@
         },
         {
             "name": "dhii/i18n-helper-base",
-            "version": "dev-develop",
+            "version": "v0.1-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/i18n-helper-base.git",
-                "reference": "6c484e2b55884451edea8e02c785fe0508304ab0"
+                "reference": "fc4c881f3e528ea918588831ebeffb92738f8dd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/i18n-helper-base/zipball/6c484e2b55884451edea8e02c785fe0508304ab0",
-                "reference": "6c484e2b55884451edea8e02c785fe0508304ab0",
+                "url": "https://api.github.com/repos/Dhii/i18n-helper-base/zipball/fc4c881f3e528ea918588831ebeffb92738f8dd5",
+                "reference": "fc4c881f3e528ea918588831ebeffb92738f8dd5",
                 "shasum": ""
             },
             "require": {
-                "dhii/i18n-interface": "^0.1",
+                "dhii/i18n-interface": "^0.1|^0.2",
                 "php": "^5.4 | ^7.0"
             },
             "require-dev": {
@@ -150,20 +151,20 @@
                 }
             ],
             "description": "A base for internationalization consumers",
-            "time": "2017-12-14T17:16:54+00:00"
+            "time": "2018-03-07T22:38:07+00:00"
         },
         {
             "name": "dhii/i18n-interface",
-            "version": "v0.1",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/i18n-interface.git",
-                "reference": "2b8e842fdf1ba8888a3efecaea3b84691c5ee1e0"
+                "reference": "7eaf0731ba80eea37a5deea6d894a0326e10be67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/i18n-interface/zipball/2b8e842fdf1ba8888a3efecaea3b84691c5ee1e0",
-                "reference": "2b8e842fdf1ba8888a3efecaea3b84691c5ee1e0",
+                "url": "https://api.github.com/repos/Dhii/i18n-interface/zipball/7eaf0731ba80eea37a5deea6d894a0326e10be67",
+                "reference": "7eaf0731ba80eea37a5deea6d894a0326e10be67",
                 "shasum": ""
             },
             "require": {
@@ -194,7 +195,7 @@
                 }
             ],
             "description": "Interfaces for internationalization.",
-            "time": "2017-03-13T12:08:29+00:00"
+            "time": "2017-03-15T16:01:39+00:00"
         },
         {
             "name": "dhii/normalization-helper-base",

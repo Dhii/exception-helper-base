@@ -6,7 +6,9 @@
 [![Latest Stable Version](https://poser.pugx.org/dhii/exception-helper-base/version)](https://packagist.org/packages/dhii/exception-helper-base)
 [![This package complies with Dhii standards](https://img.shields.io/badge/Dhii-Compliant-green.svg?style=flat-square)][Dhii]
 
-Base functionality for exception helpers.
+~~Base functionality for exception helpers.~~
+
+**DEPRECATED!** Use [`dhii/exception`][dhii/exception] instead.
 
 ## Traits
 - [`CreateExceptionCapableTrait`][CreateExceptionCapableTrait] - Creates the most basic Dhii exception.
